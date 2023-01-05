@@ -1,7 +1,7 @@
 /*import PropTypes from 'prop-types'*/
 import { useState } from "react";
 
-const Todo = ({item, onUpdate }) => {
+const Todo = ({item, onUpdate, onDelete }) => {
   const [isEdit, setIsEdit] = useState(false);
   
 
@@ -33,7 +33,7 @@ const Todo = ({item, onUpdate }) => {
     return(
       <div className="todoInfo"> {item.title} 
       <button onClick={() => setIsEdit(true)}>Edit</button>
-      <button>Delete</button>
+      <button onClick={(e) => onDelete(item.id)}>Delete</button>
        </div>
     )
   }
