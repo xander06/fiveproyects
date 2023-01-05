@@ -1,32 +1,46 @@
 /*import PropTypes from 'prop-types'*/
-import React, { useState } from 'react'
+import { useState } from "react";
 
-const Todo = () => {
-  const [title, setTitle] = useState("Hola");
+const Todo = ({item, }) => {
+  const [isEdit, setIsEdit] = useState(false);
   
-  function handleClic(e) {
-    e.preventDefault();
-    setTitle("Marcos")
+
+  function FormEdit(){
+    const [newValue, setNewValue]= useState(item.title);
+    function handleSubmit(e){
+      e.preventDefault();
+    }
+  
+    function handleChange(e){
+      const value = e.target.value;
+     setNewValue(value);
+    }
+
+    function handleClickUpadateTodo(){
+
+    }
+
+    return(
+    <form className="todoUpdateForm" onSubmit={handleSubmit}>
+      <input className="todoInput" type="text" onChange ={handleChange} value={newValue}/>
+      <button className="button" onClick={handleClickUpadateTodo}>Update</button>
+    </form>
+    );
   }
 
-  function handleChange(event) {
-    const value = event.target.value;
-    setTitle(value);
+  function TodoElement(){
+    return(
+      <div className="todoInfo"> {item.title} 
+      <button onClick={() => setIsEdit(true)}>Edit</button>
+      <button>Delete</button>
+       </div>
+    )
   }
 
   return (
-    <div className='todoContainer'>
-      <div className='todoCreateForm'>
-        <input onChange={handleChange} className='todoInput' value={title} />
-        <input
-          onClick={handleClic}
-          type="submit"
-          value="Create todo"
-          className='buttonCreate'
-        />
-      </div>
-      {title}
+    <div className="todo">
+      {isEdit ? <FormEdit /> : <TodoElement/> }
     </div>
- )
+   );
 }
 export default Todo
