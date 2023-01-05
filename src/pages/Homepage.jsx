@@ -39,7 +39,7 @@ const Homepage = () => {
 
     return (
         <div className='todoContainer'>
-            <div><h1>To Do List</h1>
+            <div className="toDoCabecera"><h1>To Do List</h1>
             <img src="../img/topersona.png" alt="to do list inicio"/>
             </div> 
             <form className='todoCreateForm' onSubmit={handleSubmit}>
@@ -52,7 +52,7 @@ const Homepage = () => {
                     className='buttonCreate'
                 />
             </form>
-            <div className='todoContainer'>
+            <div className='todoContainerTarea'>
                 {todos.map(item => (
                     <Todo key={item.id} item={item} onUpdate={handleUpdate} onDelete={handleDelete} />
                 ))

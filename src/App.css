@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif !important;
@@ -222,8 +223,12 @@ body {
 }
 
 .tarea {
+  font-family: 'Mr Dafoe', cursive;
   display: flex;
-  flex: 1 1 0
+  flex: 1 1 0;
+  color:#317f96;
+  font-size: xx-large;
+  font-weight: 300;
 }
 
 .button {
@@ -256,4 +261,31 @@ body {
   background-color: #ea134cd1;
   border-radius: 2px;
   color: #fff;
+}
+
+.toDoCabecera {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+}
+
+.toDoCabecera h1 {
+  font-family: 'Mr Dafoe', cursive;
+  flex: 1 1 auto;
+  display: flex;
+  margin: auto;
+  font-size: 3em;
+  color: #442f6c;
+}
+
+.toDoCabecera img {
+  flex: 2 1 auto;
+}
+
+.todoContainerTarea{
+  background-image: url("../public/img/papel.jpg");
+}
+
+.todo {
+  padding: 0 12%;
 }
