@@ -194,3 +194,15 @@ body {
     opacity: 0.5;
   }
 }
+
+/*toDo */
+.todoContainer {
+background-color: #18A0FB;
+}
+.todoCreateForm {
+  background-color: #51fb18;
+}
+
+.todoInput {
+  background-color: #99fb18;
+}
