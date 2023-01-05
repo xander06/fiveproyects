@@ -1,13 +1,13 @@
 # fiveproyects
-# App Playground con React
+# 5 APPs React
 
 <img src='./public/img/logo.png'>  - In this repository you can  see 5  app  with  react Hooks  and  use States, developer with con React, in the "[Kruger Start](https://www.youtube.com/@KrugerCorp)   "
 
 ## Built With 👣👍🧑‍🏫
 
-- 🪵 HTML  
-- 🛖 CSS
-- 📚 Git
+- 🪵   HTML  
+- 🛖   CSS
+- 📚   Git
 - 🚙⚙️JavaScript
 
 ## Getting Started
