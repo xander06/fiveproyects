@@ -16,6 +16,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/clima" element={<Clima />} />
       </Routes>
       <Footer {...footerinfo} />
     </Router>
