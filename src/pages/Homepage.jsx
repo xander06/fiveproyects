@@ -39,7 +39,11 @@ const Homepage = () => {
 
     return (
         <div className='todoContainer'>
+            <div><h1>To Do List</h1>
+            <img src="../img/topersona.png"/>
+            </div> 
             <form className='todoCreateForm' onSubmit={handleSubmit}>
+            
                 <input onChange={handleChange} className='todoInput' value={title} />
                 <input
                     onClick={handleSubmit}
