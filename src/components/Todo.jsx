@@ -1,7 +1,7 @@
 /*import PropTypes from 'prop-types'*/
 import { useState } from "react";
 
-const Todo = ({item, }) => {
+const Todo = ({item, onUpdate }) => {
   const [isEdit, setIsEdit] = useState(false);
   
 
@@ -17,7 +17,8 @@ const Todo = ({item, }) => {
     }
 
     function handleClickUpadateTodo(){
-
+      onUpdate(item.id,newValue);
+      setIsEdit(false);
     }
 
     return(
