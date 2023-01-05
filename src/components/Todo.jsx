@@ -24,7 +24,7 @@ const Todo = ({item, onUpdate, onDelete }) => {
     return(
     <form className="todoUpdateForm" onSubmit={handleSubmit}>
       <input className="todoInput" type="text" onChange ={handleChange} value={newValue}/>
-      <button className="button" onClick={handleClickUpadateTodo}>Update</button>
+      <button className="buttonUpdate" onClick={handleClickUpadateTodo}>Update</button>
     </form>
     );
   }
@@ -32,8 +32,8 @@ const Todo = ({item, onUpdate, onDelete }) => {
   function TodoElement(){
     return(
       <div className="todoInfo"> {item.title} 
-      <button onClick={() => setIsEdit(true)}>Edit</button>
-      <button onClick={(e) => onDelete(item.id)}>Delete</button>
+      <button className="buttonEdit" onClick={() => setIsEdit(true)}>Edit</button>
+      <button className="buttonDelete" onClick={(e) => onDelete(item.id)}>Delete</button>
        </div>
     )
   }

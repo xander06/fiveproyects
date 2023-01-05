@@ -197,18 +197,50 @@ body {
 
 /*toDo */
 .todoContainer {
-background-color: #18A0FB;
+background-color: #0cf361;
 }
 .todoCreateForm {
   background-color: #51fb18;
 }
 
 .todoInput {
-  background-color: #99fb18;
+  background-color: #d4eaf334;
 }
 .todoUpdateForm {
-  background-color: #181817;
+  background-color: #f5f5f0;
 }
-.todoInput{
-  background-color: aqua;
+.todoInfo {
+  display: flex;
+  align-items: center;
+}
+.button {
+  border-radius: 12px;
+  background-color: rgb(190, 255, 159);
+  color: rgb(0, 0, 0);
+  padding: 1%;
+}
+
+.buttonCreate {
+  background-color: #250657d1;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.buttonUpdate {
+  background-color: #062557d1;
+  border-radius: 2px;
+  color: #fff;
+
+}
+
+.buttonEdit {
+  background-color: #065716d1;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.buttonDelete{
+  background-color: #ea134cd1;
+  border-radius: 2px;
+  color: #fff;
 }
