@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mr+Dafoe&display=swap');
 body {
   font-family: 'Montserrat', sans-serif !important;
 }
@@ -223,7 +223,7 @@ body {
 }
 
 .tarea {
-  font-family: 'Mr Dafoe', cursive;
+  font-family: 'Indie Flower', cursive;
   display: flex;
   flex: 1 1 0;
   color:#317f96;
