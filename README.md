@@ -42,7 +42,7 @@ For a live demo please click on the following link:
 - GitHub: [@Xander06](https://github.com/xander06)
 - LinkedIn: [Alexander Cangás](https://www.linkedin.com/in/alexander-c-00a2967b/)
 
-👤 ****
+👤 **Vida MRR - Programacion web**
 - Youtube [Youtube Vida MRR - Programacion web](https://www.youtube.com/@vidamrr)
 
 ## 🤝 Contributing
